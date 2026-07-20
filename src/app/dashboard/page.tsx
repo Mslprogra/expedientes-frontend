@@ -72,7 +72,7 @@ export default function DashboardPage() {
     
     const token = localStorage.getItem('token');
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/estudiantes/${id}/`, {
+      const response = await fetch(`https://expedientes-upt.onrender.com/api/estudiantes/${id}/`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Token ${token}`,
